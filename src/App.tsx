@@ -6,6 +6,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
 import Login from "./Pages/Login/Login";
+import "./styles/global.scss";
+
+
+
 
 function App() {
   const Layout = () => {
@@ -13,11 +17,11 @@ function App() {
       <div className="main">
         <Navbar />
         <div className="container">
-          <div className="menucontainer">
+          <div className="menuContainer">
             <Menu />
           </div>
 
-          <div className="contentcontainer">
+          <div className="contentContainer">
             <Outlet />
           </div>
         </div>

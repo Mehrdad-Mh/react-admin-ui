@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Vazir";
   src: url(../../public/assets/fonts/Vazir.eot),
@@ -6,6 +7,7 @@
   url(../../public/assets/fonts/Vazir.woff2);
 }
 
+@import "./Variables.scss";
 
 * {
   margin: 0;
@@ -23,3 +25,22 @@ a {
   color: inherit;
 }
 
+.main{
+  background-color: $main-bg;
+  color: $main-color;
+}
+
+.container{
+  display: flex;
+}
+
+.menuContainer{
+  width: 250px;
+  padding: 5px 20px;
+  border-right: 2px solid $soft-bg;
+}
+
+.contentContainer{
+  padding: 5px 20px;
+  width: 100%;
+}
