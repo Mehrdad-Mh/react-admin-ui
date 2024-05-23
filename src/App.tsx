@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
+import Login from "./Pages/Login/Login";
 
 function App() {
   const Layout = () => {
@@ -47,6 +48,11 @@ function App() {
         },
       ],
     },
+
+    {
+      path : "/login",
+      element : <Login/>
+    }
   ]);
 
   return <RouterProvider router={router} />;
