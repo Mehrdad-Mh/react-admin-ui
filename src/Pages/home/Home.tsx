@@ -2,6 +2,7 @@
 import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser } from "../../MenuData";
 
 import BarChartBox from "../../components/BarChart/BarChartBox";
+import BigChart from "../../components/BigChart/BigChart";
 import TopBox from "../../components/TopBox/TopBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 import PieChartBox from "../../components/pieChartBox/PieChartBox";
@@ -20,7 +21,7 @@ export default function Home() {
       <div className="box box4"> <PieChartBox/> </div>
       <div className="box box5">  <ChartBox  {...chartBoxRevenue}/>  </div>
       <div className="box box6">  <ChartBox  {...chartBoxConversion}/>  </div>
-      <div className="box box7"> 7 </div>
+      <div className="box box7"> <BigChart/> </div>
       <div className="box box8"> <BarChartBox {...barChartBoxVisit}/> </div>
       <div className="box box9"> <BarChartBox {...barChartBoxRevenue}/> </div>
     </div>

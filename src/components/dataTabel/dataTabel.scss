@@ -1,0 +1,48 @@
+.dataTabel{
+ 
+    width: 95%;
+    .data-grid{
+
+        padding: 20px;
+        margin: 20px 0px;
+        background-color: white;
+        width: 95%;
+
+
+        .action{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+
+
+            img{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .MuiDataGrid-toolbarContainer{
+            flex-direction: row-reverse;
+
+        }
+
+        img{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+        }
+
+
+        .MuiDataGrid-cell + .MuiDataGrid-cell--textLeft{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+}
