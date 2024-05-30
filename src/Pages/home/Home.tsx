@@ -24,6 +24,8 @@ export default function Home() {
       <div className="box box7"> <BigChart/> </div>
       <div className="box box8"> <BarChartBox {...barChartBoxVisit}/> </div>
       <div className="box box9"> <BarChartBox {...barChartBoxRevenue}/> </div>
+
+
     </div>
   );
 }

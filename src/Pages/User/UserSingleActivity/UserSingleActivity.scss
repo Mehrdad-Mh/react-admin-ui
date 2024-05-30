@@ -1,0 +1,21 @@
+.userSingleActivity{
+
+  .css-1ms7hib-MuiTimelineItem-root::before{
+   content: none;
+  }
+
+
+  .userActivity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    h3{
+        padding: 5px 10px;
+    }
+     span{
+        padding: 5px 10px;
+     }
+}
+  }

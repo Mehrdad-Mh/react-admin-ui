@@ -2,12 +2,14 @@ import "./Users.scss"
 import DataTabel from "../../components/dataTabel/dataTabel"
 import { GridColDef } from "@mui/x-data-grid";
 import { userRows } from "../../MenuData";
+import { useState } from "react";
+import AddUser from "../../components/AddUser/AddUser";
 
 
 const columns: GridColDef<(typeof rows)[number]>[] = [
   { field: 'id', headerName: 'ID', width: 90 },
 {
-  field : "avatar",
+  field : "img",
   headerName:"Avatar",
   width:100,
   renderCell : (params) => {
@@ -86,15 +88,21 @@ width:100
 
 
 export default function Users() {
+
+  const [open , setOpen] = useState(false);
+
+
+
   return (
     <div className="users">
     <div className="info">
       <h2>  کاربران سایت  </h2>
-      <button>  اضافه کردن مخاطب  </button>
+      <button onClick={() => setOpen(true)}>  اضافه کردن مخاطب  </button>
     </div>
 
     <div className="d-tabel">
       <DataTabel slug="users" columns= {columns} rows={userRows}/>
+      {open && <AddUser slug="users"  columns={columns}  setOpen={setOpen}/>  }
     </div>
     </div>
   )
